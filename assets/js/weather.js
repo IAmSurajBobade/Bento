@@ -1,11 +1,11 @@
-const iconElement = document.querySelector('.weather-icon');
-const tempElement = document.querySelector('.temperature-value p');
-const descElement = document.querySelector('.temperature-description p');
+const iconElement = document.querySelector(".weather-icon");
+const tempElement = document.querySelector(".temperature-value p");
+const descElement = document.querySelector(".temperature-description p");
 
 // App data
 const weather = {};
 weather.temperature = {
-  unit: 'celsius',
+  unit: "celsius",
 };
 
 // Change to 'F' for Fahrenheit
@@ -13,13 +13,12 @@ var tempUnit = CONFIG.weatherUnit;
 
 const KELVIN = 273.15;
 // Use your own key for the Weather, Get it here: https://openweathermap.org/
-const key = `${CONFIG.weatherKey}`;
+const key = "${{ secrets.OPEN_WEATHER_MAP_KEY }}";
 
 // Set Position function
 setPosition();
 
 function setPosition(position) {
-
   getWeather(CONFIG.weatherLatitude, CONFIG.weatherLongitude);
 }
 
@@ -37,7 +36,7 @@ function getWeather(latitude, longitude) {
     .then(function (data) {
       let celsius = Math.floor(data.main.temp - KELVIN);
       weather.temperature.value =
-        tempUnit == 'C' ? celsius : (celsius * 9) / 5 + 32;
+        tempUnit == "C" ? celsius : (celsius * 9) / 5 + 32;
       weather.description = data.weather[0].description;
       weather.iconId = data.weather[0].icon;
     })
