@@ -48,9 +48,9 @@ const CONFIG = {
     },
     {
       id: "3",
-      name: "Todoist",
+      name: "Google Keep",
       icon: "trello",
-      link: "https://calendar.google.com/calendar/r",
+      link: "https://keep.google.com/u/0/",
     },
     {
       id: "4",
@@ -66,9 +66,9 @@ const CONFIG = {
     },
     {
       id: "6",
-      name: "Odysee",
+      name: "Youtube",
       icon: "youtube",
-      link: "https://odysee.com/",
+      link: "https://youtube.com/",
     },
   ],
 
@@ -84,16 +84,16 @@ const CONFIG = {
   lists: {
     firstList: [
       {
-        name: "Inspirational",
-        link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        name: "Youtube home",
+        link: "https://www.youtube.com",
       },
       {
-        name: "Classic",
-        link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        name: "Youtube Watch later",
+        link: "https://www.youtube.com/playlist?list=WL",
       },
       {
-        name: "Oldies",
-        link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        name: "Amazon Music",
+        link: "https://music.amazon.in/my/playlists/25bd6e97-8b45-4191-993d-b56dcb14c92c",
       },
       {
         name: "Rock",
