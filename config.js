@@ -22,7 +22,7 @@ const CONFIG = {
   greetingNight: "Go to Sleep!",
 
   // Weather
-  weatherKey: "${{ secrets.OPEN_WEATHER_MAP_KEY }}",
+  weatherKey: '${{ secrets.OPEN_WEATHER_MAP_KEY }}',
   weatherIcons: "OneDark", // 'Nord', 'Dark', 'White'
   weatherUnit: "C",
   weatherLatitude: "18.520430",
